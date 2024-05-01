@@ -1,0 +1,17 @@
+#main{
+    height: 100%;
+    position: relative;
+}
+.allContentSpt {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr; 
+    grid-template-rows: 1fr auto;  /* Cambia a dos filas y una fila para el footer */
+    gap: 8px;
+    height: 100%; /* Resta la altura del footer de la altura total de la ventana */
+    max-height: 100%;
+    grid-template-areas:
+        "leftContent rightContent rightContent"
+        "footers footers footers"; /* Asigna el footer a la última fila */
+    position: relative;
+}
